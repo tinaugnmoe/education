@@ -1,13 +1,5 @@
-var person ={
-    name: "Mg Mg",
-    age: 30,
-    address: "Mandalay",
-    sayName: function(){
-        return "My name is " + this.name;
-    },
-    sayAge: function(){
-        return "I'm" + this.age;
-    }
-
-};
-console.log(person.sayAge());
+var num = 2;
+while(num!=Infinity) {
+    console.log(num + " * " + num + " = " + num * num)
+    num = (num*num);
+}
