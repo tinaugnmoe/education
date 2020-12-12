@@ -1,20 +1,35 @@
-var cars = ["BMW","VIGO","CROWN"];
 
-var links = [
-    "https://www.youtube.com/",
-    "https://www.facebook.com/",
-    "https://www.google.com.mm/webhp?tab=rw"];
+function dayOfChange(){
+    var v = document.getElementById("demo").value;
 
-var i = 0;
-var numOfcar = cars.length;
-var numOflink = links.length;
-var text = "";
+    var today = v;
+    
+    if (today==="sunday") {
+        //true condition
+        console.log("today is sunday");
+    } else if (today === "monday"){
+        //true condition
+        console.log("today is monday");
+    } else if (today === "tuesday"){
+        //true condition
+        console.log("today is tuesday");
+    } else if (today === "webnesday") {
+        //true condition
+        console.log("today is webnesday");
+    } else if (today === "thursday"){
+        //true condition
+        console.log("today is thursday");
+    } else if (today === "friday"){
+        //true
+        console.log("today is friday");
+    } else if (today === "saturday"){
+        //true
+        console.log("today is saturday");
+    } else {
+        // false
+        console.log("something  wrong");
+    }
+};
 
 
-while(i<numOfcar){
-    text += "<li><a href='"+links[i]+"'>"+cars[i]+"</a></li>" ;
-    i++;
-}
 
-
-document.getElementById("demo3").innerHTML = text;
